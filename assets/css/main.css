@@ -1,0 +1,225 @@
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+    margin-top: 20px;
+    height: fit-content;
+}
+
+.form-container > form {
+    display: flex;
+    align-items: center;
+    flex: 0 1 700px;
+    height: fit-content;
+}
+
+.form-container > form > input,
+.form-container > form > input:hover,
+.form-container > form > input:active,
+.form-container > form > input:focus {
+    margin-right: 5px;
+    flex: 1;
+    height: 30px;
+    border: 1.5px solid #d0d7de;
+    border-radius: 5px;
+}
+
+.form-container > form > input:focus {
+    outline: 1px solid rgb(45, 195, 255);
+}
+
+.form-container > form > .err-field,
+.form-container > form > .err-field:focus {
+    outline: 1px solid rgb(250, 14, 14);
+}
+
+.form-container > form > .add-new-btn {
+    height: 25px;
+    align-items: center;
+}
+
+.inner-container {
+    display: flex;
+    flex: 0 1 700px;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-top: 15px;
+    border: 1.5px solid #d0d7de;
+    border-radius: 5px;
+}
+
+.inner-container .container-head {
+    display: flex;
+    height: 50px;
+    flex: 0 1 100%;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #f6f8fa;
+    border-bottom: 1.5px solid #d0d7de;
+    border-radius: 5px 5px 0 0;
+}
+
+.inner-container .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+    height: 100%;
+}
+
+
+/* Button */
+.btn {
+    display: flex;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: opacity 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn-icon {
+    margin-right: 5px;
+}
+
+.btn-default {
+    color: rgb(36, 36, 36);
+    background-color: rgba(189, 188, 188, 0.212);
+}
+
+.btn-primary {
+    background-color: rgb(0, 204, 255);
+    color: whitesmoke;
+}
+
+.btn-secondary {
+    background-color: #0bed62;
+    color: white;
+}
+
+.btn-remove {
+    background-color: rgb(230, 2, 2);
+    color: white;
+}
+
+.btn-cancel {
+    background-color: rgb(241, 199, 8);
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.70;
+}
+
+.btn:active {
+    opacity: 0.50;
+}
+
+/* Toggle */
+
+.toggle {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 4px;
+    transition: opacity 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: rgb(16, 235, 71);
+}
+
+.remove {
+    background-color: rgb(230, 2, 2);
+}
+
+.toggle:hover {
+    opacity: 0.70;
+}
+
+.toggle:active {
+    opacity: 0.50;
+}
+
+#nodata {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+    color: red;
+    font-weight: 600;
+    background-color: #f8f8f8;
+}
+
+.loading-indicator-bg,
+.success-indicator-bg,
+.error-indicator-bg,
+.ask-delete-indicator-bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(231, 229, 229, 0.322);
+    backdrop-filter: 10px;
+    z-index: 100;
+}
+
+/* .ask-delete-indicator-bg {
+    display: flex;
+} */
+
+.loading-indicator-bg > .indicator-container,
+.success-indicator-bg > .indicator-container,
+.error-indicator-bg > .indicator-container,
+.ask-delete-indicator-bg > .indicator-container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 50px;
+    margin-top: 200px;
+    background-color: white;
+    color: rgb(0, 174, 255);
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgba(128, 128, 128, 0.616);
+} 
+
+.ask-delete-indicator-bg > .indicator-container {
+    padding: 20px 10px 5px 10px;
+    width: 350px;
+    font-size: 15px;
+    flex-wrap: wrap;
+    color: orange;
+}
+
+.ask-delete-indicator-bg > .indicator-container > .btn-action-container {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: flex-end;
+    height: 50px;
+    margin-top: 15px;
+    border-top: 1px solid #ede9e9c2;
+    align-items: center;
+}
+/* .error-indicator-bg {
+    display: flex;
+} */
+
+.error-indicator-bg > .indicator-container {
+    color: red;
+}

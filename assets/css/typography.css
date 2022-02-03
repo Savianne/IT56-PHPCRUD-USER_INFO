@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Sen-Regular;
+    src: url(http://localhost:83/assets/fonts/Sen-Regular.ttf);
+}
+
+body {
+    font-family: Sen-Regular;
+    color: #24292f;
+}
